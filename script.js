@@ -69,6 +69,13 @@ const canvas = new fabric.Canvas('canvas', {isDrawingMode: false});
 //   }
 // });
 
+imgtohide = document.querySelector('#imgtohide');
+     if (window.screen.availWidth < 1025){
+        imgtohide.style.display = "none"; 
+     }
+     else{
+        imgtohide.style.display = "block";
+     }
 
 
 

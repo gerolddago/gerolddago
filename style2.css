@@ -101,12 +101,25 @@ footer {
 #item4 h1,#item4 h3, #item4 p{
     justify-content: center;
 }
+#item5{
+    text-align: center;
+    width: 100%;
+    /* margin: 2%; */
+    overflow-wrap: anywhere;
+}
 #itemContact{
     text-align: center;
     width: 45%;
     /* margin: 2%; */
     overflow-wrap: anywhere;
     margin-top: 8%;
+}
+/* #item h1{
+    font-size: 500px;
+    font-weight: bolder;
+} */
+#imgtohide{
+    display: block;
 }
 .containerP input{
     border: none;
@@ -130,12 +143,17 @@ footer {
     width: 90%;
     height: auto;
     overflow: hidden;
+    margin-left: 5%;
 }
 /* @media (min-aspect-ratio:16/9)  */
-@media screen and (max-width:425px){
+@media screen and (max-width:1024px){
     .bgclip{
-        height: 100%;
-        width: auto;
+        margin-top: 11%;
+    }
+}
+@media screen and (max-width:426px){
+    .bgclip{
+        margin-top: 20%;
     }
 }
 
@@ -169,8 +187,9 @@ button:hover {
 }
 
 p{
-    color: grey;
-    font-size: small;
+    /* color: grey; */
+    font-size: medium;
+    font-weight: 700;
 }
 h5{
     display: flex;
@@ -211,7 +230,6 @@ select{
     height: auto;
     border-radius: 0;
 }
-
 
 
 /*----------------------------------------------------------------------------------*/

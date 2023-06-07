@@ -1,67 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GEROLD DAGO | Portfolio</title>
-        <link rel="icon" href="img/1x/logo-gerold-dago.png"/>
-        <link rel="stylesheet" href="style2.css"/>
-    </head>
-    <body>
-        <header>
-            <a href="cv.html"><h5>CV</h5></a>
-            <a href="showreel.html"><h5>SHOWREEL</h5></a>
-            <a href="#"><h1>GEROLD DAGO</h1></a>
-            <a href="contacts.html"><h5>CONTACTS</h5></a>
-            <a href="#"><h5>FR|EN</h5></a>
-        </header>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEROLD DAGO | Portfolio</title>
+    <link rel="icon" href="img/logo-gerold-dago.png"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #FFF;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            padding: 20px;
+            text-align: center;
+        }
 
+        nav {
+            text-align: center;
+        }
 
-        <div class="container">
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-            <!-- <button id="gen_ideas">GENERATE AI IDEAS</button> -->
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
 
-            <div class="item">
-                <img src="img/photo_cv_1_edited_n.jpg" alt="" width="500px" height="auto">
-            </div>
-            <div class="item">
-                <img src="img/photo_cv_1_edited_n.jpg" alt="" width="500px" height="auto" id="imgtohide">
-            </div>
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
 
-            <div class="item" id="item4">
-                <h1>BIENVEVUE SUR MON PORTFOLIO</h1>
-                <h3>JE SUIS GENERALISTE 3D A L'IIM</h3>
-                <p> Actuellement en deuxième année à l'IIM Digital School.</p>
-            </div>
+        section {
+            text-align: center;
+            padding: 50px;
+            margin-bottom: 5%;
+        }
 
-            <!-- <div class="item" id="item5">
-                <h1>QUI SUIS-JE ?</h1>
-                <p>rdyftugyihugiyutfycrxd</p>
-            </div> -->
+        #sec1{
+            padding-top: 30%;
+            padding-bottom: 20%;
+        }
 
-            <div class="item" id="item5">
-                <h1>QUELQUES PROJETS</h1>
-                <div class="item"><img src="img/squidgame.png" alt=""width="60%" height="auto"></div>
-                <div class="item"><img src="img/cerf.png" alt=""width="60%" height="auto"></div>
-                <div class="item"><img src="img/coke.png" alt=""width="60%" height="auto"></div>
-            </div>
+        h1 {
+            font-size: 36px;
+        }
 
-        </div>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-        <!-- <button id="gen_ideas"><a href="mailto:gerold.dago@gmail.com">CONTACTER AU PLUS VITE</a></button>
-        <script>
-            function lockApp(){
-                document.location.replace("index.html");
-                console.log("Application verrouillé");
+        video{
+            position: absolute;
+            top: -16%;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+
+        .video-bg{
+            background-color: aqua;
+            width: 100%;
+        }
+
+        @media screen and (max-width:426px) {
+            video{
+                top: 30%;
+                left: -40%;
+                height: 60%;
+                width: 140%;
+                overflow: hidden;
             }
-        </script> -->
+            #sec1{
+            padding-top: 75%;
+            padding-bottom: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GEROLD DAGO</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html"><b>ACCUEIL</b></a></li>
+                <li><a href="cv.html"><b>CV</b></a></li>
+                <li><a href="showreel.html"><b>SHOWREEL</b></a></li>
+                <li><a href="contacts.html"><b>CONTACTS</b></a></li>
+                <li><a href="fr.html"><b>FR</b></a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <footer>
-            <h5>Designé et Programmé par Gerold Dago.</h5>
-            <h5>©Tous droits réservé 2023.</h5>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+    <div class="video-bg">
+        <video autoplay loop muted plays-inline src="img/ColorGRADING_cacatoes.mp4" type="video/mp4" class="bgclip"></video>
+    </div>
+
+    <section id="sec1"></section>
+
+    <section>
+        <h1>BIENVEVUE SUR MON PORTFOLIO</h1>
+        <img src="img/photo_cv_1_ed_cropped_2_sans_fond.png" alt="Photo Gerold Dago" width="140px" height="auto">
+        <h3>JE SUIS GENERALISTE 3D</h3>
+        <p> Actuellement en deuxième année à l'IIM Digital School. <br> La Défense - Nanterre</p> <br>
+        <p>Je souhaiterais poursuivre en tant que <b>Project Manager</b> ou <b>Technical Director</b>.<br>
+            Dans la 3D, j'aime le Compositing, lighting et le texturing.<br><br>
+            En Général, j'aime l'Art, le Design, le sport et la programmation.<br>
+            D'ailleurs, c'est moi qui est entièrement programmé ce site et l'ai mis en ligne. <br>
+            J’ai également une sensibilité particulière à l’esthétique et au minimalisme</p>
+    </section>
+
+    <section>
+        <h3>LOGICIELS DEJA UTILISE</h3>
+        <nav>
+            <ul>
+                <li><a href="#"><b>ACCUEIL</b></a></li>
+                <li><a href="cv.html"><b>CV</b></a></li>
+                <li><a href="showreel.html"><b>SHOWREEL</b></a></li>
+                <li><a href="contacts.html"><b>CONTACTS</b></a></li>
+                <li><a href="fr.html"><b>FR</b></a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <p><a href="cv.html"><b>EN SAVOIR PLUS (CV)...</b></a></p>
+    </section>
+
+    <section>
+        <p>&copy; Gerold Dago 2023. Conception et Programmation. Tous droits réservés.</p>
+    </section>
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <img src="showreel-image.jpg" alt="Image Showreel">
+    <div class="video-container">
+        <iframe src="lien-de-la-video" frameborder="0" allowfullscreen></iframe>
+    </div> -->

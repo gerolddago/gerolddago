@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root{
+    --primary-color:#fff;
+    --secondary-color:#000;
+}
+.dark-theme{
+    --primary-color:#000;
+    --secondary-color:#fff;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,11 +19,16 @@ h2{
     font-weight: 600;
 }
 
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
 header {
-    background-color: #ffffff;
+    background-color: var(--primary-color);
     padding: 20px;
     text-align: left;
-    color: #000000;
+    color: var(--secondary-color);
     position: fixed;
     height: 100%;
     left: 0;
@@ -34,13 +49,13 @@ nav ul li {
 }
 
 nav ul li a{
-    color: #000000;
+    color: var(--secondary-color);
     text-decoration: none;
     padding: 5px 10px;
     display: block;
 }
 a{
-    color: #000000;
+    color: var(--secondary-color);
 }
 
 main {
@@ -64,12 +79,20 @@ iframe{
     height: 315px;
 }
 
+#icon{
+    width: 23px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
 @media screen and (max-width:426px){
     header {
-        background-color: #ffffff;
+        background-color: var(--primary-color);
         padding: 20px;
         text-align: left;
-        color: #000000;
+        color: var(--secondary-color);
         position: fixed;
         height: 100px;
         left: 0;

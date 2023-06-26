@@ -59,6 +59,10 @@ main {
     width: 100%;
     height: auto;
 }
+iframe{
+    width: 560px;
+    height: 315px;
+}
 
 @media screen and (max-width:426px){
     header {
@@ -96,4 +100,9 @@ main {
         width: 100%;
         height: auto;
     }
+
+    iframe{
+    width: 380px;
+    height: 213.75px;
+}
 }

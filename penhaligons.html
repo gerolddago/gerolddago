@@ -25,21 +25,27 @@
   
   <main>
     <section id="accueil">
-      <div class="gallery">
-        <a href="https://youtu.be/S62td2G8Y4Y"><img src="img/penhaligons2.png" alt="Image 1"></a>"Penhaligon's" <br> student project for a london luxury brand <br> made on blender, using zbrush, subtance painter, nuke and after effects <br> modeling deer, lighting and compositing. 
-        <img src="img/squidgame3.png" alt="Image 3">"Cho sang woo, Squid Game." <br> Made on Zbrush <br> We had one week to make a sculpt using zbrush and we could choose the character we want to. 
-        <img src="img/grenier.jpg" alt="Image 4">"Grenier - Aménagé" <br> Made on 3DS Max and Maya for modeling, <br> on Substance Painter for texturing and <br> on Unreal Engine for integration.
-        <img src="img/earth.jpeg" alt="Image 2"> "Earth." <br> all aspects. <br> Made on Blender, <br> starting with a low res mesh and using NASA map of the earth to make textures.
+      <div class="gallery"> 
+        <a href="https://youtu.be/S62td2G8Y4Y"><img src="img/penhaligons.png" alt="Image 1"></a>
+        <a href="https://youtu.be/S62td2G8Y4Y"><img src="img/penhaligons4.png" alt="Image 1"></a>
       </div>
     </section>
-
-    <br><br><br><br><br>
 
     <section>
       Website designed and coded by gerold dago, &copy; All Right Reserved.
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script>
+    var icon = document.querySelector("#icon");
+    icon.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")){
+        icon.src = "img/sun.png";
+      }else{
+        icon.src = "img/moon.png";
+      }
+    }
+  </script>
 </body>
 </html>

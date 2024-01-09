@@ -96,22 +96,22 @@ iframe{
 
 
 @media screen and (min-width:426px){
-    .accueil{
+    #accueil{
         display:none;
     }
     
-    .accueil2{
+    #accueil2{
         display:block;
     }
 }
 
 
 @media screen and (max-width:426px){
-    .acceuil{
+    #acceuil{
         display:block;
     }
     
-    .acceuil2{
+    #acceuil2{
         display:none;
     }
     

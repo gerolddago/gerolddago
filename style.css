@@ -95,7 +95,26 @@ iframe{
 }
 
 
+@media screen and (min-width:426px){
+    .acceuil{
+        display:none;
+    }
+    
+    .acceuil2{
+        display:block;
+    }
+}
+
+
 @media screen and (max-width:426px){
+    .acceuil{
+        display:block;
+    }
+    
+    .acceuil2{
+        display:none;
+    }
+    
     header {
         background-color: var(--primary-color);
         padding: 20px;

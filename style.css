@@ -104,7 +104,11 @@ iframe{
         display:block;
     }
 }
-
+@media screen and (max-width:427px){
+    #acceuil2{
+        display:none;
+    }
+}
 
 @media screen and (max-width:426px){
     #acceuil{

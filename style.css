@@ -96,11 +96,11 @@ iframe{
 
 
 @media screen and (min-width:426px){
-    .acceuil{
+    .accueil{
         display:none;
     }
     
-    .acceuil2{
+    .accueil2{
         display:block;
     }
 }

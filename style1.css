@@ -256,3 +256,9 @@ a:hover{
   height: auto;
   margin-left: -8%;
 }
+
+#contenu_confidentiel{
+  width: 114%; 
+  height: auto; 
+  margin-left: -8%;
+}

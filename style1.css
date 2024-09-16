@@ -232,10 +232,10 @@ a:hover{
 }
 
 
-.container{
+/* .container{
     max-width: 70%;
     margin:20px auto;
-}
+} */
 .container .image-container{
     columns: 3 150px;
     gap: 2%;
@@ -248,4 +248,11 @@ a:hover{
 .block{
     padding: 0;
     margin: 0;
+}
+
+
+#showreel{
+  width: 114%;
+  height: auto;
+  margin-left: -8%;
 }

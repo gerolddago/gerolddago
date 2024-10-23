@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Gerold Dago Gallerie</title>
+    <link rel="icon" href="img/GD_logo.png">
+</head>
+<body>
+
+    <div class="container">
+
+        <p>Cliquez sur une photo pour la télécharger.</p>
+        <br>
+        
+        <div class="image-container">
+
+            <!-- <img src="img/GD_09537.jpg" onclick="DownloadImage()">
+            <img src="img/GD_06929_bw_.png" onclick="DownloadImage()"> -->
+            
+            <script>
+            
+                function addImages () {
+                    console.log("démarrage de la fonction 'addImages'") 
+
+                for (let x = 0; x < 200; x++) {
+                    var imagejavascript = document.createElement("img")
+                    imagejavascript.src = "img/geco_restaure/GD_0" +  (x + 9537)  + ".jpg";
+                    
+
+                    // imageActuelle = "<img" + src + "onclick='DownloadImage()'>";
+                    // console.log(imageActuelle) 
+                    console.log("image ajoutée")
+                     if (imagejavascript.src){
+                         document.body.appendChild(imagejavascript)
+                         console.log(document.body.appendChild(imagejavascript));
+                         x += 1;
+                         console.log("image suivante") 
+                     }
+                     else {
+                         imagejavascript.style.display = "none";
+                         x += 2;
+                         console.log("image non existante, image suivante") 
+                    }
+                    
+                }
+            }
+
+                addImages()
+
+            </script>
+
+        </div>
+        © Copyright 2024 Gerold Dago, Tous droits réservés.
+    </div>
+
+    
+    <!-- <script src="script.js"></script> -->
+    <script src="FileSaver.min.js"></script>
+    
+</body>
+</html>

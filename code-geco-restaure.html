@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title> Code d'accès </title>
+        <link rel="icon" href="img/GD_logo.png">
+        <link rel="stylesheet" href="style2.css"/>
+    </head>
+    <body>
+        <div class="container-inner">
+            <!-- <img src="img/logo3.jpg" alt="logo" width="60%" height="auto"> -->
+            <!-- <div class="containerP"> -->
+                <!-- <div class="item"> -->
+                    <div class="hide_access">
+                        <a class="contact" href="https://drive.google.com/drive/folders/18CO0WxhA_6zzo9BxAHH_7xs3rgFH7ZSu?usp=sharing" style="color: black;padding: 10px; text-decoration: underline;">Voir toutes les photos</a>
+                    </div>
+
+                    <br>
+
+                    <input id="password" type="password" placeholder="CODE D'ACCES">
+                    <button onclick="verifyPassword()">ENTRER</button>
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+        <script>
+            if (document.querySelector("#password") != null) {
+                var password = document.querySelector("#password");
+            }
+            function verifyPassword(){
+                console.log("entrer clické");
+                if (password.value === 'C1G2E3O'){
+                    document.querySelectorAll(".hide_access").style.display = "block";
+                    // document.location.replace("index-zeina.html");
+                    console.log("entrer acceuil");
+                }
+            }
+        </script>
+    </body>
+</html>

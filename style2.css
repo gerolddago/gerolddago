@@ -935,6 +935,6 @@ input{
 }
 
 
-.hide_access{
+#hide_access{
     display: none;
 }

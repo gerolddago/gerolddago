@@ -222,7 +222,7 @@ img{
         gap: 2%;
     } */
     .container .image-container img{
-        margin-bottom: 7%;
+        margin-bottom: 5%;
         cursor: pointer;
     }
 }
@@ -270,7 +270,7 @@ a:hover{
     gap: 2%;
 }
 .container .image-container img{
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     cursor: pointer;
 }
 

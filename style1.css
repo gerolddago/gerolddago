@@ -221,7 +221,8 @@ img{
       /* flex-grow: 1; */
       flex: 1 0 auto;
       padding: 10px;
-      background-image: url(img/vertical_photo_gg_2.jpeg);
+      /* background-image: url(img/vertical_photo_gg_2.jpeg); */
+      background-image: url(img/photo_gerold_dago.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
       text-align: center;

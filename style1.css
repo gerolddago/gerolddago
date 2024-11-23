@@ -199,7 +199,7 @@ img{
     height: auto;
 }
 
-@media screen and (max-width:426px){
+@media screen and (min-width:1px){
     .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,7 +234,8 @@ img{
       text-align: left;
       /* position: relative; */
       position: fixed;
-      top: 68%;
+      /* top: 68%; */
+      bottom: 210px;
       left: 5%;
       z-index: 10;
     }
@@ -251,7 +252,39 @@ img{
         margin-bottom: 5%;
         cursor: pointer;
     }
-}
+  }
+
+
+    @media screen and (min-width:427px) {
+      .container{
+        background-image: url(img/photo_gerold_dago_large_3.jpg);
+        background-position: center;
+      }
+      ul{
+        display: flex;
+        max-width: 500px;
+        /* padding: 3% 20%; */
+        padding: 10px 70px;
+        position: relative;
+        left: 52%;
+        transform: translateX(-50%);
+        align-items: center;
+        position: relative;
+        /* left: 2%; */
+      }
+      
+      .bio_sortie{
+        bottom: 230px;
+      }
+      p{
+        font-size: 14px;
+      }
+      .biographie p{
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+    }
+
 
 
 
@@ -333,7 +366,9 @@ a:hover{
 
 
 button{
-  width: 340px;
+  width: 90%;
+  min-width: 220px;
+  max-width: 340px;
   height: 50px;
   background-color: rgba(239, 41, 64, 1);
   border: 0px;
@@ -363,7 +398,9 @@ ul li img {
 }
 ul{
   display: flex;
-  padding: 3% 20%;
+  max-width: 500px;
+  /* padding: 3% 20%; */
+  padding: 10px 70px;
   /* position: relative;
   left: 50%;
   transform: translateX(-50%); */
@@ -387,7 +424,8 @@ ul li {
   /* background-color: rgba(120,120,120, .4); */
   /* position: absolute; */
   position: fixed;
-  bottom: 13%;
+  /* bottom: 13%; */
+  bottom: 90px;
   left: 5%;
   width: 90%;
   max-width: 400px;

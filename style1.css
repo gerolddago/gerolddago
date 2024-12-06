@@ -222,7 +222,7 @@ img{
       flex: 1 0 auto;
       padding: 10px;
       /* background-image: url(img/vertical_photo_gg_2.jpeg); */
-      background-image: url(img/photo_gerold_dago.jpeg);
+      background-image: url(img/photo_gerold_dago_optimized.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
       text-align: center;
@@ -257,7 +257,7 @@ img{
 
     @media screen and (min-width:427px) {
       .container{
-        background-image: url(img/photo_gerold_dago_large_3.jpg);
+        background-image: url(img/photo_gerold_dago_large_3_optimized.jpg);
         background-position: center;
       }
       ul{

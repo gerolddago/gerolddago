@@ -226,6 +226,7 @@ img{
       background-size: cover;
       background-repeat: no-repeat;
       text-align: center;
+      background-color: #fff;
     }
     .container ul img:hover{
         filter: brightness(50%);
@@ -340,9 +341,12 @@ a:hover{
 
 
 #showreel{
-  width: 114%;
+  /* width: 114%;
   height: auto;
-  margin-left: -8%;
+  margin-left: -8%; */
+
+  width: 95%;
+  max-width: 500px;
 }
 
 #contenu_confidentiel{
